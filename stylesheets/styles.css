@@ -4,14 +4,14 @@
   display: inline-block;
 }
 .star.empty {
-  background: url("images/ios7-star-outline.png") no-repeat 0 0;
+  background: url("../images/ios7-star-outline.png") no-repeat 0 0;
   background-size: 100% auto;
 }
 .star.half {
-  background: url("images/ios7-star-half.png") no-repeat 0 0;
+  background: url("../images/ios7-star-half.png") no-repeat 0 0;
   background-size: 100% auto;
 }
 .star.full {
-  background: url("images/ios7-star.png") no-repeat 0 0;
+  background: url("../images/ios7-star.png") no-repeat 0 0;
   background-size: 100% auto;
 }
