@@ -22,6 +22,19 @@ section {
 
 .call-to-action {
   background: #ddd;
+  img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+  
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+  
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 .call-to-action h1 {
   font-size: 28px;
@@ -37,7 +50,6 @@ section {
   border-radius: 6px;
   border: 2px solid #555;
   color: #fff;
-  width: 120px;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
