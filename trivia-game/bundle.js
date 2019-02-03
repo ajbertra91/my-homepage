@@ -12261,8 +12261,6 @@
 
   var src = gql;
 
-  // import * as es6Promise from 'es6-promise';
-
   /*
    * curl -X POST -H "Content-Type: application/json" --data '{ "query": "{ questions {category} }" }' http://localhost:4000
    */
@@ -12281,8 +12279,14 @@
     `;
 
       const hostname = window.location.hostname;
+      let uri = '';
+      if (hostname === 'localhost') {
+          uri = 'http://localhost:4000';
+      } else {
+          uri = 'https://ajb-trivia-game-services.herokuapp.com';
+      }
       const client = new ApolloClient({
-        link: new HttpLink({ uri: `http://${hostname}:4000/graphql` }),
+        link: new HttpLink({ uri: `${uri}/graphql` }),
         cache: new InMemoryCache()
       });
 
