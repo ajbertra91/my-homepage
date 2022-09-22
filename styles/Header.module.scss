@@ -1,0 +1,77 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $gray-light;
+
+  > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 3rem 2rem;
+    width: 100%;
+    max-width: 1024px;
+    flex-direction: column;
+
+    @include for-size(tablet-portrait-up) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+.name-resume,
+.name-job-title {
+  font-weight: 200;
+  color: $gray-dark;
+}
+
+.name-resume {
+  font-size: 1.25rem;
+  letter-spacing: $letter-spacing;
+}
+
+.name-proper {
+  font-size: 2.5rem;
+  color: $gray-dark;
+  letter-spacing: calc($letter-spacing * 4);
+}
+
+.name-job-title {
+  font-size: 1.25rem;
+  letter-spacing: $letter-spacing;
+}
+
+.info {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    span {
+      color: $gray-dark;
+      font-weight: 700;
+      & + a {
+        color: $gray;
+        font-weight: 400;
+        margin-left: 1rem;
+      }
+    }
+    & + li {
+      margin-top: 1rem;
+    }
+  }
+}
