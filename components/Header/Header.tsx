@@ -14,7 +14,7 @@ const Header: NextPage = () => {
           <ul>
             <li><span>T</span><a href="tel:860-384-3921">860-384-3921</a></li>
             <li><span>M</span><a href="mailto:ajbertra91@gmail.com">ajbertra91@gmail.com</a></li>
-            <li><span>W</span><a href="https://www.linkedin.com/in/adambertrand/" target="_blank">linkedin.com/in/adambertrand</a></li>
+            <li><span>W</span><a href="https://www.linkedin.com/in/adambertrand/" target="_blank" rel="noreferrer">linkedin.com/in/adambertrand</a></li>
           </ul>
         </div>
       </div>

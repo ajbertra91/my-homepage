@@ -58,8 +58,8 @@ const TabContainer = () => {
   const freelanceDesc = [
     'Built WordPress sites and maintained them for clients in the USA and an English website for SoonChunHyang University in South Korea.'
   ];
-  const getSdsuDesc = () => (<><a href="https://www.sdstate.edu/" target="_blank">South Dakota State University</a>, Brookings, SD</>)
-  const getAugieDesc = () => (<><a href="https://www.augie.edu/"> Augustana University</a>, Sioux Falls, SD</>)
+  const getSdsuDesc = () => (<><a href="https://www.sdstate.edu/" target="_blank" rel="noreferrer">South Dakota State University</a>, Brookings, SD</>)
+  const getAugieDesc = () => (<><a href="https://www.augie.edu/" target="_blank" rel="noreferrer">Augustana University</a>, Sioux Falls, SD</>)
   const introDesc = `${getYear()} years of front - end development experience, delivers projects on time, adapts quickly, enjoys learning new skills; delivers solutions for nationally recognized brands including the NFL, NHL, PGA TOUR, NASCAR, MLS, NCAA, Voya Financial, Prudential, Empower Retirement.`
   useEffect(() => {
     setActiveTab(TAB_ONE)
