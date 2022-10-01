@@ -5,16 +5,17 @@ interface TabContentProps {
   title: string;
   job: string | null;
   subtitle: string;
-  description: string[];
+  description: string[] | null;
 }
 
 const TabContentJob = ({ title, job, subtitle, description }: TabContentProps) => {
+  console.log('description', description)
   return (
     <div className={styles['tab-professional-info']}>
       <InfoTile title={title} job={job} subtitle={subtitle} />
 
       <ul className={styles.text}>
-        {description.map((bullet) => (
+        {description?.map((bullet) => (
           <li key={bullet}>{bullet}</li>
         ))}
       </ul>
