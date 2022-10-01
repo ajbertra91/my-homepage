@@ -1,0 +1,33 @@
+@import "./variables.scss";
+
+.info-tile {
+  border-left: 5px solid rgb(255, 208, 0);
+  padding-left: 1rem;
+  padding-bottom: 0.75rem;
+  flex: 1 0 auto;
+  max-width: 230px;
+
+  .title {
+    color: $gray-dark;
+    letter-spacing: $letter-spacing;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .job {
+    color: $gray-dark;
+    letter-spacing: $letter-spacing;
+    text-transform: lowercase;
+    font-style: italic;
+    font-size: 1rem;
+    font-weight: 200;
+    margin-top: 0;
+  }
+
+  .subtitle {
+    color: $gray;
+    margin-bottom: 0;
+  }
+}

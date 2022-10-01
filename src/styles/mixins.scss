@@ -1,0 +1,23 @@
+$breackpoints: (
+  "iphone678Plus-only": screen and (max-width: 414px),
+  "iphone678X-only": screen and (max-width: 375px),
+  "iphone5-only": screen and (max-width: 320px),
+
+  "phone-up": screen and (min-width: 321px),
+  "tablet-portrait-up": screen and (min-width: 600px),
+  "tablet-landscape-up": screen and (min-width: 900px),
+  "desktop-up": (min-width: 1025px)
+);
+
+@mixin for-size($name) {
+  @if map-has-key($breackpoints, $name) {
+    @media #{inspect(map-get($breackpoints, $name))} {
+      @content;
+    }
+  }
+
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoints}`. "
+     + "Please make sure it is defined in `$breakpoints` map in mixins.scss"
+  }
+}
