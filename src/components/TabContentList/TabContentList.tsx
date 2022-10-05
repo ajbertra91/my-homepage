@@ -9,7 +9,6 @@ interface TabContentProps {
 }
 
 const TabContentJob = ({ title, job, subtitle, description }: TabContentProps) => {
-  console.log('description', description)
   return (
     <div className={styles['tab-professional-info']}>
       <InfoTile title={title} job={job} subtitle={subtitle} />
