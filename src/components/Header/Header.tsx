@@ -17,11 +17,12 @@ const Header: NextPage = () => {
         </h1>
         <div className={styles.info}>
           <ul>
-            <li><span>T</span><a href={`tel:${data.phone}`}>{data.phone}</a></li>
+            <li><span>P</span><a href={`tel:${data.phone}`}>{data.phone}</a></li>
             <li><span>M</span><a href={`mailto:${data.email}`}>{data.email}</a></li>
               {data.socialMedia?.map((w: any) => (
                 <li key={w.text}><span>W</span><a href={w.url} target="_blank" rel="noreferrer">{w.text}</a></li>
-              ))}
+                ))}
+            <li><span>R</span><a href={data.resume.url} target="_blank" rel="noreferrer">{data.resume.label}</a></li>
           </ul>
         </div>
       </div>}

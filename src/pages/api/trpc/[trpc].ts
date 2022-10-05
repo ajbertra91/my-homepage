@@ -22,7 +22,11 @@ export const appRouter = trpc.router()
         socialMedia: [{
           url: "https://www.linkedin.com/in/adambertrand/",
           text: "linkedin"
-        }]
+        }],
+        resume: {
+          label: "Resume [pdf]",
+          url: "/static/assets/docs/Adam_Bertrand__resume2022.pdf"
+        }
       };
     },
   })
