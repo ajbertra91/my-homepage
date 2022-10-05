@@ -36,7 +36,7 @@ const TabContainer = () => {
     if (data) {
       setActiveTab(data.TAB_ONE);
     }
-  }, [])
+  }, [data])
 
   return (
     <>
