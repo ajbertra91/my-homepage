@@ -7,7 +7,7 @@ import TabContentText from "../TabContentText";
 const TabContainer = () => {
   const apiData = trpc.useQuery(['work-history']);
   const {data} = apiData;
-  const [activeTab, setActiveTab] = useState<String>();
+  const [activeTab, setActiveTab] = useState<String>('Work History');
   const tabOneRef = useRef<HTMLButtonElement>(null);
   const tabTwoRef = useRef<HTMLButtonElement>(null);
 
@@ -33,7 +33,9 @@ const TabContainer = () => {
   }
 
   useEffect(() => {
-    setActiveTab(data?.TAB_ONE || "Work History");
+    if (data) {
+      setActiveTab(data.TAB_ONE);
+    }
   }, [])
 
   return (
